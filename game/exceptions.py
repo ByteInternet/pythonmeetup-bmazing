@@ -1,0 +1,4 @@
+
+
+class MaximumTurnsReached(Exception):
+    pass
