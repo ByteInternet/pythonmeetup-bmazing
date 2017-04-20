@@ -16,6 +16,7 @@ You can write your own player and send your github repository to meetup-bmazing@
 1. Write your own player in `./players/{your_playername}.py`.
 1. Start the maze to test your player:
 `python bmazing.py --player={yourname} --maze={mazename}`
+1. This is how to start the SamplePlayer: `python bmazing.py --player=SamplePlayer --maze=default`
 
 ## The Player
 The player has one method that is called on every turn, which is called `turn`:
