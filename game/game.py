@@ -1,5 +1,5 @@
 import logging
-from game.views.viewfactory import get_view
+from .views.viewfactory import get_view
 from .exceptions import MaximumTurnsReached
 from .mazefield import coordinate
 from .moves import *
