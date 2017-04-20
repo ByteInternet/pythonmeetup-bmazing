@@ -36,7 +36,7 @@ def start_game(mazename=None, playername=None, display=None, loglevel=None, *arg
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-m', '--maze', default="default", type=str, help="Name of the maze")
-    parser.add_argument('-p', '--player', default="sampleplayer", type=str, help="Name of the player (classname, and must be registered into players/__init__.py)")
+    parser.add_argument('-p', '--player', default="SamplePlayer", type=str, help="Name of the player (classname, and must be registered into players/__init__.py)")
     parser.add_argument('-d', '--display', default="terminal", type=str, choices=['pygame', 'terminal', 'none'], help="Select which display should be used to visualize the game")
     parser.add_argument('-l', '--loglevel', default="info", type=str, choices=['warning', 'error', 'info', 'debug'], help="Level of logging")
     argv = parser.parse_args()
