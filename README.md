@@ -14,6 +14,7 @@ You can write your own player and send your github repository to meetup-bmazing@
 1. Install requirements:
 `pip install -r requirements/play.txt`
 1. Write your own player in `./players/{your_playername}.py`.
+1. Register your own player in `./players/__init__.py` to enable it
 1. Start the maze to test your player:
 `python bmazing.py --player={yourname} --maze={mazename}`
 
