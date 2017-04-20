@@ -8,5 +8,4 @@ def get_player_by_name(name):
     try:
         return globals()[name]()
     except:
-        logger.error("Cannot load player {}".format(name))
-        raise
+        raise RuntimeError("Cannot find player by name {}; Players are found by their classnames (case-sensitive) and should be imported into `players/__init__.py`".format(name))
