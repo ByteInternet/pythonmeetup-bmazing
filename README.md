@@ -50,3 +50,33 @@ This is the start point of the maze
 
 ### Finish
 This is the target, and will end the game when the player reaches this attribute
+
+
+## Mac OS
+On some (newer) versions of Mac OS pygame has some issues running in a virtualenv.
+If you want to run the pygame display on Mac OS you can use [pygame_sdl2](https://github.com/renpy/pygame_sdl2).
+
+Short installation instructions (for full instructions see pygame_sdl2 readme).
+Assuming you already are in a virtualenv and have [homebrew](https://brew.sh/) installed.
+
+Install required sdl2 libraries with homebrew.
+
+`brew install sdl2 sdl2_gfx sdl2_image sdl2_mixer sdl2_ttf`
+
+Install cython (for building pygame_sdl2):
+
+`pip install cython`
+
+Clone pygame_sdl2 in the python-bmazing project dir:
+
+`git clone https://github.com/renpy/pygame_sdl2.git`
+
+`cd pygame_sdl2`
+
+Modify virtualenv for using pygame_sdl2:
+
+`python fix_virtualenv.py`
+
+Build and install pygame_sdl2:
+
+`pip install .`
