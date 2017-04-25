@@ -1,3 +1,9 @@
+try:
+    import pygame_sdl2
+    pygame_sdl2.import_as_pygame()
+except ImportError:
+    pass
+
 import pygame
 
 # Define the colors we will use in RGB format
@@ -13,6 +19,8 @@ COORDINATE_PX_SIZE = 25
 
 class PyGameView:
     def __init__(self, mazefield):
+        pygame.init()
+
         self.clock = pygame.time.Clock()
         self.field = mazefield.field
 
