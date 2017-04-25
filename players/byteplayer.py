@@ -43,8 +43,3 @@ class BytePlayer(Player):
     def _last_move(self):
         if len(self.previous_turns) > 0:
             return self.previous_turns[-1]
-
-    def _is_way_back(self, move):
-        if len(self.previous_turns) > 0:
-            return self.previous_turns[-1] == move
-        return False
